@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-image: url("./inspiration-geometry.png");
+    background-color: black;
+    background-position: top right;
+    animation: mymove 10s infinite;
+}
+@keyframes mymove {
+    50% {background-position: bottom left;}
+  }
+body{
+    margin:4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    width: 30%;
+    height: 10%;
+    font-size: 40px;
+    text-align: center;
+    color: lightgray;
+    background-color: #e84545;
+    border-radius: 40px;
+    padding: 1.5%;
+    margin: 1%;
+    background-image: none;
+    font-family: 'New Tegomin', serif;
+}
+.sub-heading{
+    color: lightgray;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+.input-sec{
+    width: 100%;
+    font-size: 30px;
+    color: lightgray;
+    border: 2px solid #e84545;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 10px;
+    
+}
+.input-sec-f{
+    padding: 1%;
+    width: 90%;
+}
+.ques{
+    color: lightgray;
+    padding-bottom: 10px;
+}
+.input{
+    align-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #e84545;
+    text-align: center;
+    font-size: large;
+}
+.button{
+    width: 100px;
+    height: 32px;
+    border: none;
+    background-color: #e84545;
+    border-radius: 20px;
+    margin-left: 10px;
+    color: lightgray;
+    font-size: 15px;
+}
+.output-sec{
+    width: 100%;
+    padding: .5%;
+    color: lightgray;
+    margin: 2%;
+    /* border: 2px solid red; */
+}
+.ginp{
+    font-size: 25px;
+    padding: 2%;
+}
+.analysed{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    color: lightgray;
+}
+.vowel,.consonent,.sp_char,.spaces,.numbers{
+    display: flex;
+    margin: 2%;
+    padding: 1%;
+    width: 200px;
+    height: 50px;
+    background-color: #e84545;
+    border-radius: 20px;
+    background-image: none;
+    color: lightgray;
+    font-size: 20px;
+    align-content: center;
+}
+#display_vowel,#display_consonent,#display_space,#display_special_character,#display_number{
+    text-align: center;
+    background-color: #e84545;
+    padding-left: 3%;
+}
+.button:hover{
+    background-color: #f10e0e;
+    background-image: none;
+    transform: scale(1.1);
+    transition: height 0.5s width 0.5s transform 0.5s;
+    transition-timing-function: ease-in-out;
+}

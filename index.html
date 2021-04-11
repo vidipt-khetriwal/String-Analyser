@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task-3</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=New+Tegomin&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="heading">
+            String Analyser
+        </div>
+        <p class="sub-heading">
+            This analyser will help you count vowel, consonent, special character, spaces and numbers in the given string.
+        </p>
+        
+        <div class="input-sec">
+            <form id="frm" class="input-sec-f" action="" onsubmit="return false">
+                <p class="ques">Enter your text here:</p>
+                <input class="input" id="inpt" type="text" required placeholder="Type Here.."><br>
+                <button class="button" type="submit" onclick="analyser()">Analyse</button>
+            </form>
+        </div>
+        <div class="output-sec">
+            <div class="ginp" id="given_inp">
+                Given Input:
+                <span id="preview">  </span>
+            </div>
+            
+            <div class="analysed">
+                <div class="vowel">
+                    Vowel :  
+                    <div id="display_vowel"></div>
+                </div>
+                <div class="consonent" id="c">
+                    Consonent :  
+                    <span id="display_consonent"></span>
+                </div>
+                <div class="sp_char" id="sc">
+                    Special Characters :  
+                    <span id="display_special_character"></span>
+                </div>
+                <div class="spaces" id="s">
+                    Spaces :  
+                    <span id="display_space"></span>
+                </div>
+                <div class="numbers" id="n">
+                    Numbers :  
+                    <span id="display_number"></span>
+                </div>
+            </div>
+        </div>
+
+        
+        <script src="./index.js"></script>
+
+</body>
+</html>
