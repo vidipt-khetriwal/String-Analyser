@@ -48,7 +48,7 @@ body{
 }
 .input-sec-f{
     padding: 1%;
-    width: 90%;
+    width: 100%;
 }
 .ques{
     color: lightgray;
@@ -56,7 +56,7 @@ body{
 }
 .input{
     align-content: center;
-    width: 100%;
+    width: 90%;
     height: 40px;
     background-color: lightgray;
     border-radius: 15px;
@@ -66,6 +66,9 @@ body{
     color: #e84545;
     text-align: center;
     font-size: large;
+}
+.input:focus{
+    outline: none;
 }
 .button{
     width: 100px;
@@ -77,6 +80,9 @@ body{
     color: lightgray;
     font-size: 15px;
 }
+.button:focus{
+    outline: none;
+}
 .output-sec{
     width: 100%;
     padding: none;
@@ -84,21 +90,26 @@ body{
     margin: none;
 }
 .ginp{
+    width: 100%;
     font-size: 25px;
-    padding: 2%;
+    margin: 2%;
+    padding: 1%;
+    overflow: scroll;
 }
 .analysed{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
     width: 100%;
-    flex-direction: row;
+    /* flex-direction: row; */
     color: lightgray;
 }
 .vowel,.consonent,.sp_char,.spaces,.numbers{
     display: flex;
-    margin: 2%;
+    margin: 1%;
     padding: 1%;
-    width: 200px;
+    width: 222px;
     height: 50px;
     background-color: #e84545;
     border-radius: 20px;
